@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<form action="register.php" method="POST">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="staff-id"><b>Staff Id</b></label>
+    <input type="text" placeholder="Enter Staff Id" name="staff-id" required>
+    <label for="course-id"><b>Department Name</b></label>
+	 <select name="dep-name" placeholder="Enter Department Name"required>
+    <option value="bca">bca</option>
+    <option value="mca">mca</option>
+    <option value="btech">btech</option>
+    <option value="mtech">mtech</option>
+  </select>
+   
+    <label for="staff-name"><b>Staff Name</b></label>
+    <input type="text" placeholder="Enter Staff Name" name="staff-name" required>
+
+<label for="designation"><b>Staff Designation</b></label>
+    <input type="text" placeholder="Enter Designation" name="designation" required>
+     
+    <label for="dob"><b>Date of Birth</b></label>
+    <input type="date" placeholder="Enter Date of Birth" name="dob" required>
+  
+    <label for="gender"><b>Gender</b></label>
+    <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other  
+<br><br>
+<label for="address"><b>Address</b></label>
+    <input type="textarea" placeholder="Enter Address" name="address" required>    
+
+<label for="email"><b>Email Id</b></label>
+    <input type="email" placeholder="Enter Email Id" name="email" required>  
+
+<label for="ph-no"><b>Phone No</b></label>
+    <input type="text" placeholder="Enter Phone No" name="phone" required>    
+  
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+
+    <button type="submit" name="reg_user" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="login.html">Login</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
+
+
